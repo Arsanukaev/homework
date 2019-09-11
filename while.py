@@ -12,6 +12,6 @@ def ask_user():
             if a == exitanswer:
                 break
         except KeyboardInterrupt:
-            print ("Пока")
+            print (" Пока")
             break
 ask_user()
