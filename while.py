@@ -3,15 +3,13 @@ exitanswer = "Хорошо"
 def ask_user():
     while True:
         try:
-            print ('Как дела?')
             a = input()
-            if a == "Как дела?":
-                print (question["Как дела?"])
-            if a == "Что делаешь?":
-                print (question["Что делаешь?"])
+            for key in question:
+                if a == key:
+                    print (question[key])
             if a == exitanswer:
                 break
         except KeyboardInterrupt:
-            print (" Пока")
+            print ("Пока")
             break
 ask_user()
